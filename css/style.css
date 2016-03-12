@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { 	font-family: 'marck_scriptregular', cursive;
+		font-size: 24px;
+		}
+
+#contact-form{
+	width: 50%;
+  	margin: auto;
+	}
+
+.bloc_curseur{
+	display: none;
+}
+
+#bold{
+	font-style: bold;
+}
+
+/*tous les blocs compasant le formulaire*/
+.bloc{
+	padding: 0px 0px 15px 0px;
+	text-align: center;
+	margin: auto;
+	}
+
+/*boutons radio*/
+
+input[type="radio"]{visibility:hidden;}
+.curseur span{cursor:pointer;}
+#monsieur, #madame {background-image: url(../interface/icon-formulaire-empty.svg);
+					background-repeat:no-repeat;
+					background-size: contain;
+					background-position: 0 4px;}
+
+#mlle{padding-left:10px;}
+
+/*divers champs a remplir*/
+
+#nom, #email, #departement, #age {
+	border:none;
+	font: inherit;
+	outline:none;
+	font-size: 18px;
+	}
+
+.fond {background: transparent repeating-linear-gradient(45deg, white, lightgrey 4px);
+		}
+
+/*PIECE jointe*/
+
+div.fileinputs {
+	position: relative;
+	margin-top: 40px;
+}
+
+div.fakefile {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	width:100%;
+}
+
+div.fakefile span {border: thin solid;
+					padding: 1px 12px;}
+#fakefile {border:none;}
+
+#realfile {
+	position: relative;
+	text-align: right;
+	-moz-opacity:0 ;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+	width: 280px;
+	height: 70px;
+	top: -15px;
+	cursor: pointer;
+}
+
+/*champs de selection avec flêches*/
+
+.select-wrapper {		cursor:pointer; font-size: 18px;
+						}
+
+.select-wrapper select {border:none;
+						padding-right:20px;
+						cursor:pointer;
+						-moz-appearance:none;
+						-webkit-appearance:none;
+						-o-apperance:none;
+						apperance: none;
+						background: url(../interface/icon-fleche-01.png) no-repeat right center transparent;
+						background-size: 15px;
+						overflow: scroll;
+						}
+
+.select-wrapper select::-ms-expand {
+	display: none;
+}
+
+
+/*zone du message*/
+
+#blocmessage {width:200%;
+			margin-left: -50%;
+			margin-top: 50px;}
+#message {margin-top: 15px;
+			width:30%;
+			max-width:30%;
+			min-height:90px;
+			max-height:200px;
+			font: inherit;
+			font-size: 18px;
+			outline:none;}
+
+/*enveloppe*/
+
+#submit {width: 140px;
+		margin:auto;}
+.bouton-envoyer {width :inherit;
+					cursor:pointer;}
+
+	/*enlever l'outline de l'enveloppe*/
+
+input[type="image"]:focus {outline:none;}
+
+/** Progress Bar **/
+#progressBarSending {
+	width: 200px;
+	margin: 0 auto;
+	display: none;
+}
+
+#progressBarSending .progressBarLoading {
+	width: 200px;
+	margin: 0 auto;
+}
+
+#progressBarSending .waitingSentence {
+	font-size: 0.80em;
+	text-align: center;
+}
+
+/*****retour aux erreurs*******/
+
+.blue_error {
+	-moz-box-shadow: 0px 0px 4px 0px rgb(0, 0, 131);
+	-webkit-box-shadow: 0px 0px 4px 0px rgb(0, 0, 131);
+	box-shadow: 0px 0px 4px 0px rgb(0, 0, 131);
+}
+
+.blue_error_text {
+	color: rgb(0, 0, 131);
+}
+
+
+/*test{color:#CEFFF9}*/
